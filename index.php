@@ -1,6 +1,6 @@
-<?php
+<?php 
 
-/** Test data
+/**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
