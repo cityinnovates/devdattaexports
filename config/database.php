@@ -1,4 +1,18 @@
 <?php
+$domain_host = strtolower($_SERVER['HTTP_HOST']);
+if (strpos($domain_host, 'https://cilearningschool.com/devdattaexports/') !== false)
+{
+  'database' => env('DB_DATABASE', 'cityeduh_devdattaexportsDB'),
+  'username' => env('DB_USERNAME', 'cityeduh_devdattaexport'),
+            'password' => env('DB_PASSWORD', 'uIkhwx2j[7]-')
+}
+else
+{
+
+}
+
+
+
 
 return [
 
@@ -46,6 +60,20 @@ return [
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
+        'mysql2' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE_live', 'forge'),
+            'username' => env('DB_USERNAME_live', 'forge'),
+            'password' => env('DB_PASSWORD_live', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
