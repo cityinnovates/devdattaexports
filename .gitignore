@@ -4,8 +4,6 @@
 .env.php
 /node_modules
 /public/hot
-/public/storage
-/public/uploads
 /storage/*.key
 /temp
 /.idea
